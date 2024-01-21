@@ -33,7 +33,7 @@ app.use(errorAll)
 const start=async ()=>{
         try {
                 await connectDB(process.env.MONGO_URL);
-                app.listen(5000,()=>{
+                app.listen(3000,()=>{
                         console.log('running')
                 })
         } catch (error) {
