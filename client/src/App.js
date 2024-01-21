@@ -29,7 +29,7 @@ const AppLayout = () => {
           }
         };
           try {
-                const response = await fetch('https://tornado-five.vercel.app/api/v1/auth/profile', options);
+                const response = await fetch('https://tornado-sandy.vercel.app/api/v1/auth/profile', options);
                 const data = await response.json()
                 setUserLogin(data.login)
                 setUserName(data.name);
