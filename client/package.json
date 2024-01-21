@@ -1,0 +1,36 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "i will learn react",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bhaveshmnit/Namaste-React.git"
+  },
+  "author": "Bhavesh shera",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bhaveshmnit/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/Bhaveshmnit/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "postcss": "^8.4.32",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.3.6"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.21.1"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ]
+}
