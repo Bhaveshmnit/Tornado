@@ -32,7 +32,7 @@ app.use(errorAll)
 
 const start=async ()=>{
         try {
-                await connectDB('mongodb+srv://Bhavesh:Bhavesh1207@nodeproject.kdaxolz.mongodb.net/Swiggy_Clone_v1?retryWrites=true&w=majority');
+                await connectDB(process.env.MONGO_URL);
                 app.listen(3000,()=>{
                         console.log('running')
                 })
