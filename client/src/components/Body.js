@@ -19,7 +19,7 @@ const Body = () => {
         const fetchData = async () => {
                 
                 try {
-                        const response = await fetch('https://tornado-five.vercel.app/api/v1/res/restroCards');
+                        const response = await fetch('https://tornado-sandy.vercel.app/api/v1/res/restroCards');
                         const data = await response.json();
                         setResArray(data.ResCards)
                         setFilterList(data.ResCards)
