@@ -29,7 +29,7 @@ const AppLayout = () => {
           }
         };
           try {
-                const response = await fetch('http://localhost:5000/api/v1/auth/profile', options);
+                const response = await fetch('https://tornado-five.vercel.app/api/v1/auth/profile', options);
                 const data = await response.json()
                 setUserLogin(data.login)
                 setUserName(data.name);

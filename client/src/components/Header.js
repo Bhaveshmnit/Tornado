@@ -43,9 +43,9 @@ const Header = () => {
                 body:JSON.stringify(obj2)
               };
         try {
-          const response = await fetch('http://localhost:5000/api/v1/cart/save', options);
+          const response = await fetch('https://tornado-five.vercel.app/api/v1/cart/save', options);
           const data = await response.json()
-          const response2 = await fetch('http://localhost:5000/api/v1/favt/save', options2);
+          const response2 = await fetch('https://tornado-five.vercel.app/api/v1/favt/save', options2);
           const data2 = await response2.json()
       } catch (error) {
           console.log(error)

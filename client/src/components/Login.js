@@ -16,7 +16,7 @@ const fetchCart=async(update)=>{
           }
         };
         try {
-          const response = await fetch('http://localhost:5000/api/v1/cart', options);
+          const response = await fetch('https://tornado-five.vercel.app/api/v1/cart', options);
           const data = await response.json()
           if(data.hasOwnProperty('items'))
           {    
@@ -43,7 +43,7 @@ const fetchCart=async(update)=>{
           }
         };
         try {
-          const response = await fetch('http://localhost:5000/api/v1/favt', options);
+          const response = await fetch('https://tornado-five.vercel.app/api/v1/favt', options);
           const data = await response.json()
           if(data.hasOwnProperty('myList'))
           {    
@@ -88,7 +88,7 @@ const Login = () => {
                 e.preventDefault();
 
                 try {
-                        const response = await fetch('http://localhost:5000/api/v1/auth/login', {
+                        const response = await fetch('https://tornado-five.vercel.app/api/v1/auth/login', {
                                 method: 'POST',
                                 headers: {
                                         'Content-Type': 'application/json'

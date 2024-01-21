@@ -10,9 +10,9 @@ const useResInfoData=(resId)=>
   
         const fetchData=async()=>{
            try {
-            const data2=await fetch('http://localhost:5000/api/v1/res/name/'+resId)
+            const data2=await fetch('https://tornado-five.vercel.app/api/v1/res/name/'+resId)
             const json2=await data2.json()
-            const data =await fetch('http://localhost:5000/api/v1/res/'+resId)
+            const data =await fetch('https://tornado-five.vercel.app/api/v1/res/'+resId)
             const json=await data.json()
             const obj={categories:json?.Res?.categories,Res:json2.Res}
             setResInfo(obj)
