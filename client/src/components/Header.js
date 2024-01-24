@@ -63,7 +63,6 @@ const Header = () => {
           
         }
         
-
         //subscribe to store using selector
         
         return (
@@ -79,7 +78,7 @@ const Header = () => {
                                         {/* <li className="px-4"><Link to="/about">About</Link></li> */}
                                         {/* <li className="px-4"><Link to="/contact">Contact</Link></li> */}
                                         <li className="px-4 hover:text-[#fdf8f5]"><Link to="/cart">CART-({cartItems.items?.length})</Link></li>
-                                       {userLogin&&<li className="px-4  hover:text-[#fdf8f5]"><Link to="/profile">{userName}</Link></li>} 
+                                       {userLogin&&<li className="px-4  hover:text-[#fdf8f5]"><Link to="/profile">{userName.toLowerCase()==="neha"?"You Are Mine":userName}</Link></li>} 
                                         {!userLogin? 
                                         <li className="px-4 hover:text-[#fdf8f5]"><Link to="/login">LOGIN</Link></li>:
                                         <button className="px-4 hover:text-[#fdf8f5]" onClick={()=>handleLogout(cartItems,myFavtList)}>logout</button>
