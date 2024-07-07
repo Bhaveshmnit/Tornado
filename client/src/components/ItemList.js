@@ -47,7 +47,7 @@ const ItemList = ({ items }) => {
                                                                         }
 
                                                                 </div>
-                                                                <img className="resimage h-20 w-30 rounded-t-lg" src={"https://res.cloudinary.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_508,h_320,c_fill/" + i.imageId} alt="NOT FOUND" />
+                                                                <img className="resimage h-20 w-30 rounded-t-lg" src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,h_600/" + i.imageId} alt="NOT FOUND" />
                                                                 
                                                         </div>
                                                 </div>
